@@ -1,0 +1,212 @@
+/*
+Color Palete
+rgb(104,103,174) ----- Deep Purple
+rgb(230,230,230) ----- Light Grey
+rgb(123,156,225) ----- Light Blue
+rgb(177,149,182) ----- Light Purple
+rgb(181,226,225) ----- Teal
+rgb(239,225,96)  ----- Yellow
+*/
+/*Font Styles */
+h1,h2,h3,h4,h5,p{
+	line-height: 45px;
+}
+body
+{
+	background-color:rgb(123,156,225);
+}
+
+/*Separator*/
+
+@font-face {
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+
+#stamp path {
+	fill: rgb(181,226,225);
+	stroke: rgb(181,226,225); /* avoid gap in FF */
+}
+#stamp2 path {
+	fill:rgb(123,156,225);
+	stroke:rgb(123,156,225);  /* avoid gap in FF */
+}
+
+.section2
+{
+	background-color: rgb(123,156,225);
+}
+.section1
+{
+	background-color: rgb(181,226,225);
+	bottom: 105px;
+	position: relative;
+	z-index: -1;
+}
+.row
+{
+	margin: 0px;
+}
+/*End of Separator */
+
+/* Changes Navbar colors */
+header, .navbar-default{
+	background-color:rgb(181,226,225); 
+	border: none;
+}
+/* End of Navbar Colors */
+
+
+/* Navbar Font Colors */
+.navbar-default .navbar-nav>li>a
+{
+	color: rgb(104,103,174);
+}
+/*End of Navbar Font Colors */
+
+/* Dropdown Navbar Styles */
+.navbar-default .navbar-nav .open .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
+	line-height: 30px;
+    background-color: rgb(181,226,225);
+    color: rgb(104,103,174);
+}
+/*End of Dropdown Styles */
+
+
+ .jumbotron
+ {
+ 	padding: 0px;
+ 	background-size: cover;
+ 	background-image: url(../images/atkinson-16.jpg);
+ 	margin-bottom: 0px;
+ }
+div h2{
+	margin-bottom: 100px;
+}
+.col-lg-10
+	{
+	border-bottom: 4px groove rgb(104,103,174);
+	margin-top: 105px;
+	}
+
+ /* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	.jumbotron
+	{
+		min-height: 200px;
+	} 
+	.navbar-nav>li>a
+	{
+		padding-bottom: 0px;
+	}
+		.navbar-brand
+	{
+	    position: absolute;
+	    width: 100%;
+	    left: 0;
+	    text-align: center;
+	    margin: auto;
+	}
+	.navbar-left, .navbar-right
+	{
+	border-bottom: 2px groove rgb(104,103,174);
+	}
+	ul.navbar-left
+	{
+		margin-left: 20%;
+	}
+
+	ul.navbar-right
+	{
+		margin-right: 20%;
+	}
+
+	.navbar-nav li a, .navbar-brand
+	{
+		line-height: 30px; /* <--- Changes height of Navbar */
+	}
+	/* End of Navbar Styles */
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.jumbotron
+	{
+		min-height: 250px;
+	}
+	.navbar-nav>li>a
+	{
+	padding-bottom: 0px;
+	}
+		.navbar-brand
+	{
+	    position: absolute;
+	    width: 100%;
+	    left: 0;
+	    text-align: center;
+	    margin: auto;
+	}
+	.navbar-left, .navbar-right
+	{
+	border-bottom: 2px groove rgb(104,103,174);
+	}
+	ul.navbar-left
+	{
+		margin-left: 20%;
+	}
+
+	ul.navbar-right
+	{
+		margin-right: 20%;
+	}
+
+	.navbar-nav li a, .navbar-brand
+	{
+		line-height: 30px; /* <--- Changes height of Navbar */
+	}
+	/* End of Navbar Styles */
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	.jumbotron
+	{
+		min-height: 300px;
+	}
+	.navbar-nav>li>a
+	{
+		padding-bottom: 0px;
+	}
+	.navbar-brand
+	{
+	    position: absolute;
+	    width: 100%;
+	    left: 0;
+	    text-align: center;
+	    margin: auto;
+	}
+	.navbar-left, .navbar-right
+	{
+	border-bottom: 2px groove rgb(104,103,174);
+	}
+	ul.navbar-left
+	{
+		margin-left: 20%;
+	}
+
+	ul.navbar-right
+	{
+		margin-right: 20%;
+	}
+
+	.navbar-nav li a, .navbar-brand
+	{
+		line-height: 30px; /* <--- Changes height of Navbar */
+	}
+	/* End of Navbar Styles */
+}
