@@ -7,21 +7,28 @@ rgb(177,149,182) ----- Light Purple
 rgb(181,226,225) ----- Very Light Blue
 rgb(239,225,96)  ----- Yellow
 */
-/*Font Styles */
-
-p{
-	color: black;
+/* All image dimensions for place holders are height x width */
+html, body{
+	margin:0;
+	padding:0;
 }
-
-/*Separator*/
-
-@font-face {
-	font-family: 'codropsicons';
-	src:url('../fonts/codropsicons/codropsicons.eot');
-	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
-		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
-		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+/*Font Styles */
+.section1 h1,.section1 h2,.section1 h3,.section1 h4,.section1 h5{
+	font-family: Gotham HTF Bold, Sans;
+	color: rgb(52,33,120);
+}
+.section1 p{
+	color:rgb(52,33,120);
+}
+.section2 h1,.section2 h2,.section2 h3,.section2 h4,.section2 h5{
+	font-family: Gotham HTF Bold, Sans;
+	color:rgb(52,33,120);
+}
+.section2 p{
+	color:rgb(52,33,120);
+}
+footer p{
+	margin: 0 0 0;
 }
 /* Seperator and section colors */
 .jumbotron1
@@ -42,6 +49,7 @@ p{
  	z-index: 99;
  	min-height: 43px;
  }
+ /* Section Colors*/
 .section1
 {
 	background-color:rgb(153,186,225);
@@ -53,6 +61,7 @@ p{
 .section3
 {
 	background-color: rgb(52,33,120);
+	padding-bottom: 2em;
 }
 .row
 {
@@ -71,31 +80,38 @@ background-color:rgb(153,186,225);
 /* Navbar Font Colors */
 .navbar-default .navbar-nav>li>a
 {
-	color: rgb(104,103,174);
+	color: rgb(52,33,120);
+	font-size: 1.5em;
 }
 /*End of Navbar Font Colors */
 
 /* Dropdown Navbar Styles */
 .navbar-default .navbar-nav .open .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
 	line-height: 30px;
-    background-color: rgb(181,226,225);
-    color: rgb(104,103,174);
+    background-color: rgb(104,103,174);
+    color: rgb(52,33,120);
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-default .navbar-nav .open .dropdown-menuHover {
+	line-height: 30px;
+    background-color: rgb(104,103,174);
+    color: rgb(153,186,225);
 }
 /*End of Dropdown Styles */
 .down{
 	padding-top: 2em;
+}
+.navbar-default .navbar-toggle,.navbar-default .navbar-collapse
+{
+	border-color: rgb(52,33,120);
 }
 
  .jumbotron
  {
  	padding: 0px;
  	background-size: cover;
- 	background-image: url(../images/atkinson-16.jpg);
+ 	background-image: url(https://placehold.it/1280x300);
  	margin-bottom: 0px;
  }
-div h2{
-	margin-bottom: 4em;
-}
 
 /* Program Section*/
 .title
@@ -142,16 +158,54 @@ div h2{
   overflow: hidden;
   height: 0.8em;
 }
-
+.info{
+	padding-bottom: 2em;
+}
 /* End of Rate Styles */
 
 /* Start of Contact */
 form{
 	color: rgb(225,225,225);
 }
+footer{
+	line-height: 3em;
+	padding-bottom: .01px;
+}
 
+ /* Ex-Small devices (768px and under) */
+@media (max-width: 768px){
+	div.info img.img-responsive
+	{
+		margin-bottom: 3em;
+		max-height: 666px;
+		max-width: 530px;
+	}
+	h1
+	{
+		font-size: 1.5em;
+	}
+	h2
+	{
+		font-size: 1em;
+	}
+		#map-canvas
+	{
+		height: 20em;
+		top: 3em
+	}
+		.navbar-default .navbar-toggle,.navbar-default .navbar-collapse
+{
+	background-color: rgb(104,103,174);
+}
+}
  /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+
+		div.info img.img-responsive
+	{
+		margin-bottom: 3em;
+	}
+
 	.jumbotron
 	{
 		min-height: 200px;
@@ -174,12 +228,12 @@ form{
 	}
 	ul.navbar-left
 	{
-		margin-left: 20%;
+		margin-left: 10%;
 	}
 
 	ul.navbar-right
 	{
-		margin-right: 20%;
+		margin-right: 10%;
 	}
 
 	.navbar-nav li a, .navbar-brand
@@ -187,6 +241,20 @@ form{
 		line-height: 30px; /* <--- Changes height of Navbar */
 	}
 	/* End of Navbar Styles */
+
+	 .children
+	 {
+	 	margin-top: 1em;
+	 }
+	 .info
+	{
+		font-size: .9em;
+	}
+	#map-canvas
+	{
+		height: 30em;
+		top: 5em
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -213,12 +281,12 @@ form{
 	}
 	ul.navbar-left
 	{
-		margin-left: 20%;
+		margin-left: 10%;
 	}
 
 	ul.navbar-right
 	{
-		margin-right: 20%;
+		margin-right: 10%;
 	}
 
 	.navbar-nav li a, .navbar-brand
@@ -226,6 +294,20 @@ form{
 		line-height: 30px; /* <--- Changes height of Navbar */
 	}
 	/* End of Navbar Styles */
+
+	.children
+	 {
+	 	margin-top: 1em;
+	 }
+	 .info
+	{
+		font-size: 1.2em;
+	}
+		#map-canvas
+	{
+		height: 30em;
+		top: 10em
+	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -246,18 +328,27 @@ form{
 	    text-align: center;
 	    margin: auto;
 	}
+	.info
+	{
+		font-size: 1.5em;
+	}
 	.navbar-left, .navbar-right
 	{
 	border-bottom: 2px groove rgb(104,103,174);
 	}
 	ul.navbar-left
 	{
-		margin-left: 20%;
+		margin-left: 10%;
 	}
-
+	i{
+		font-size: 1.5em;
+	}
+	p{
+		font-size: 1em;
+}
 	ul.navbar-right
 	{
-		margin-right: 20%;
+		margin-right: 10%;
 	}
 
 	.navbar-nav li a, .navbar-brand
@@ -265,4 +356,10 @@ form{
 		line-height: 30px; /* <--- Changes height of Navbar */
 	}
 	/* End of Navbar Styles */
+		#map-canvas
+	{
+		height: 30em;
+		top: 10em
+	}
+
 }
